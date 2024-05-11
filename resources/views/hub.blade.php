@@ -12,18 +12,16 @@
     @include('templates.nav')
 
     <div id="app" data-v-app>
-        
+
         <div theme="body-tertiary" class="mb-md-6">
             <div class="container-video mb-50" id="content-header">
-                <div class="content-video d-md-none-down">
-                    <video autoplay loop playsinline src="{{asset('videos/hub-desktop.mp4')}}"></video>
+                <div class="content-video aos-init aos-animate" data-aos="zoom-in" style="">
+                    <video autoplay loop playsinline src="{{asset('/videos/home-desktop.mp4')}}" ></video>
+
+                    <h1 class="text-center container-video-title">
+                        @lang('title-hub')
+                    </h1>
                 </div>
-                <div class="content-video d-md-none" style="padding-top: 170%;">
-                    <video autoplay loop playsinline src="{{asset('videos/hub-desktop.mp4')}}"></video>
-                </div>
-                <h1 class="fz-t2 fz-lg-xxl fw-bolder text-center container-video-title">
-                    @lang('title-hub')
-                </h1>
             </div>
             <div class="container mb-80 mb-lg-150">
                 <div class="row">
@@ -34,7 +32,7 @@
                             </h2>
                         </div>
 
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in-right">
                             <img src="{{asset('imagenes/hub-card-1.png')}}" alt="">
                             <div class="card-img-overlay bg-transparent cross-center flex-column" style="text-align: center;">
                                 <h1 class="fz-t2 fz-lg-t1 fw-bolder">@lang('our-mision')</h1>
@@ -45,10 +43,10 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-6 d-flex flex-column flex-lg-column-reverse gap-3 gap-lg-4">
-                        <div>
+                        <div data-aos="fade-up" data-aos-duration="3000">
                             <img src="{{asset('/imagenes/hub-card-3.png')}}" alt="" style="height: 250px">
                         </div>
-                        <div>
+                        <div data-aos="zoom-in-left">
                             <img src="{{asset('/imagenes/hub-card-1.png')}}" alt="" style="height: 230px">
                             <div class="card-img-overlay bg-transparent cross-center flex-column">
                                 <p class="text-center fz-normal fz-lg-t3 mb-0" style="padding: 20px;">
@@ -62,14 +60,14 @@
             <div class="container-expanded">
                 <div class="mb-4 mb-lg-50">
                     <div>
-                        <h3 class="d-block text-center fw-bold fz-t2 text-uppercase">@lang('our-team')</h3>
+                        <h3 data-aos="zoom-in-right" class="d-block text-center fw-bold fz-t2 text-uppercase">@lang('our-team')</h3>
                     </div>
                     <div>
-                        <h4 class="d-block text-center mb-4 fz-t3 text-uppercase">@lang('team')</h4>
+                        <h4 data-aos="zoom-in-left" class="d-block text-center mb-4 fz-t3 text-uppercase">@lang('team')</h4>
                     </div>
                 </div>
-                
-                <div class="swiper mySwiper mySwiper2"   >
+
+                <div class="swiper mySwiper mySwiper2"  data-aos="fade-up" data-aos-duration="3000" >
                     <div class="swiper-wrapper projects-swiper" autoplay loop>
                         <div class="swiper-slide" aria-label="1 / 31" style="width: 202px; margin-right: 30px;">
                             <div class="card">
@@ -295,9 +293,9 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
-    @include('components.form')
+    @include('templates.contacto')
     @include('templates.footer')
 
 

@@ -20,7 +20,7 @@ var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 6,
     slidesPerGroupSkip: 1,
     centeredSlides: true,
-    spaceBetween: 90,
+    spaceBetween: 30,
     grabCursor: true,
     pagination: {
         el: ".swiper-pagination",

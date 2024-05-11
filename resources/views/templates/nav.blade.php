@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="nav-item ">
-                        <a href="" class=" active">{{ __('Contact')}}</a>
+                        <a href="#container-formulario" class=" active">{{ __('Contact')}}</a>
                     </div>
 
                     <div class="nav-item " id="idioma">

@@ -4,7 +4,7 @@
 
         <div class="row max-0 aos-init aos-animate" id="contact">
 
-            <div class="col-12 col-lg-6 mt-3 p-5 mx-auto me-md-0 mb-6 pb-lg-6" >
+            <div class="col-12 col-lg-6 mt-3 p-5 mx-auto me-md-0 mb-6 pb-lg-6"  data-aos="zoom-in-down">
                 <form action=""  class="form-contact max-auto" id="container-formulario">
                     <input type="text" placeholder="Nombre de empresa" class="ingresar-dato" >
                     <input type="text" placeholder="Nombre y Apellido" class="ingresar-dato" >

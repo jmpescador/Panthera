@@ -5,6 +5,6 @@ import './swiper';
 import './texto';
 import './contacto';
 
-import Typed from "typed.js";
-
-window.Typed=Typed
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();

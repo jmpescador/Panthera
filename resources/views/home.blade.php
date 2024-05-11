@@ -180,7 +180,7 @@
         </div>
     </div>
 
-    <div class="content-video d-mb-none-down">
+    <div class="content-videos">
         <video autoplay loop muted playsinline src="{{asset('/videos/home-desktop.mp4')}}"></video>
     </div>
 
