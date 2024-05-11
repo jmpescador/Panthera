@@ -1,0 +1,108 @@
+
+#contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: auto 105%;
+    background-position-x: calc(50% - 300px);
+    margin-bottom: -150px;
+}
+
+@media (min-width:1200px){
+    #contact{
+        background-image: var(--bg-image);
+        height: 100%;
+    }
+}
+
+form{
+    width: 100%;
+    right: 0;
+    background-color: rgba(30, 32, 45);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgb(52, 61, 126)  ;
+}
+
+form .ingresar-dato{
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+form .ingresar-dato:focus{
+    border-color: rgb(244, 16, 82);
+}
+
+
+.opcion{
+    display: flex;
+    height: 100%S;
+    width: 100%;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.opcion label{
+    margin-left: 20px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-center input{
+    color: #fff;
+    font-weight: 700;
+    background-color: rgb(244, 16, 82);
+}
+
+.text-center input:hover{
+    background-color: transparent;
+    border: 1px solid rgb(244, 16, 82);
+    color:rgb(244, 16, 82) ;
+    font-weight: -700;
+}
+
+
+#img-contact{
+    width: 50%;
+    height: 100%;
+}
+
+#imagen-contacto img{
+    width: 100%;
+    display: none;
+}
+
+@media (max-width: 1200px){
+
+    .content-contact{
+        margin: 0 auto;
+        width: 100%;
+        --bg-image: rgba(30, 32, 45);
+    }
+
+    #contact{
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #imagen-contacto img{
+        width: 100%;
+        display: flex;
+    }
+
+    .col-lg-6{
+        width: 100%;
+    }
+}

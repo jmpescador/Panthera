@@ -1,0 +1,26 @@
+// Bootstrap
+
+$component-active-bg: rgb(255, 5, 89);
+@import 'bootstrap/scss/_functions';
+@import 'bootstrap/scss/_variables';
+@import 'bootstrap/scss/bootstrap';
+
+//base
+@import 'base';
+
+//layout
+@import 'layout';
+
+//contacto
+@import 'contacto';
+
+
+//home
+@import 'home';
+
+//home
+@import 'footer';
+
+//hub
+@import 'hub';
+
